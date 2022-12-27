@@ -1,1 +1,155 @@
-@import '~bootstrap/scss/bootstrap'
+@import '~bootstrap/scss/bootstrap';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+ img {
+    max-width: 100%;
+ }
+ 
+ li {
+    list-style: none;
+ }
+ 
+ a {
+    text-decoration: none;
+ }
+
+header{
+ div {
+    height: 150px;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    nav ul {
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        li a {
+            color: black;
+            padding: .8rem;
+            font-size: .8rem;
+            text-transform: uppercase;
+            font-weight: 700;
+
+            &.active,
+            &:hover {
+                color: #0C7CEC;
+            }
+        }
+    }
+}
+}
+.jumbo {
+    background-image: url(../img/jumbotron.jpg);
+    background-size: cover;
+    height: 350px;
+
+}
+
+.mycard {
+    max-width: 150px;
+    max-height: 150px;
+    overflow: hidden;
+
+}
+
+.comics {
+    background-color: rgb(28, 28, 28);
+    height: 500px;
+
+    .cardList {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-flow: row wrap;
+        padding: 2rem 0;
+
+    }
+
+    .cards {
+        width: calc((100% / 6) - 30px);
+        height: auto;
+        padding-left: 50px;
+    }
+
+
+}
+
+
+.bluezone {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;    
+    background-color: rgb(2, 130, 249);
+    height: 150px;
+}
+
+    ul {
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        li .list-item {
+            display: flex;
+            flex-flow: row nowrap;
+            align-items: center;            
+            padding: 2rem;
+            font-size: .7rem;
+
+            p {
+                text-transform: uppercase;
+                color: white
+            }
+
+            img {
+                width: 50px;
+
+            }
+        }
+    
+}
+
+.subFooter {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center; 
+    background-color: rgb(48, 48, 48);
+    height: 100px;
+    padding: 25px;
+    padding-left: 15%;
+    padding-right: 15%;
+
+
+
+    a {
+        text-transform: uppercase;
+        color: white;
+        border: 3px solid #0C7CEC;
+        padding: 1rem;
+    }
+
+    div {
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center; 
+        h3 {
+            color: #0C7CEC;
+            font-weight: 700;
+        }
+
+        ul {
+            display: flex;
+            flex-flow: row nowrap;
+            align-items: center; 
+                        gap: 20px;
+
+            li {
+                cursor: pointer;
+            }
+        }
+    }
+
+
+}
