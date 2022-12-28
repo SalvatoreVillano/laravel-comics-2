@@ -1,9 +1,7 @@
 @extends('layouts.app')
 @section('content')
     <div class="container">
-        <a href="{{ route('home') }}">
-            <h1 class="text-center py-5">Comics</h1>
-        </a>
+        <h1 class="text-center py-5">Comics</h1>
         <div class="row">
             @foreach ($comics as $comic)
                 <div class="col-sm-12 col-md-3 col-lg-3 mb-4">
